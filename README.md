@@ -1,6 +1,6 @@
-<b> Vincencius Maxwell</b>
-<br>
-<b> Group 6 - 165 </b>
+<p> Vincencius Maxwell 165- Group 6 </p>
+<p> JDA Sparepart Inventory</p>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
