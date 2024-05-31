@@ -24,7 +24,7 @@
                     <span>Dashboard</span></a>
             </li>
 
-            {{-- @can('superadmin') --}}
+            @can('superadmin')
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -40,7 +40,7 @@
                     <span>List Motor Product</span>
                 </a>
             </li>
-            {{-- <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="/sparepart-menu">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Sparepart</span>
@@ -64,7 +64,7 @@
                     <span>Category Motor</span>
                 </a>
             </li>
-            @endcan --}}
+            @endcan
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -121,7 +121,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Konto lodon</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> {{Auth::user()->name}}</span>
                                 <img class="img-profile rounded-circle"
                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbAbRXrkIXcVV1Gafb0s7klcLrFRaKRrZ50dxPNvmUYg&s">
                             </a>

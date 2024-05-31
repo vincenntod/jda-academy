@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Supplier extends Authenticatable
 {
     use HasFactory, Notifiable;
 
@@ -16,11 +16,12 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $table = 'users';
+    protected $table = 'supplier';
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'name_supplier',
+        'name_product',
+        'type',
+        'price',
     ];
 
     /**

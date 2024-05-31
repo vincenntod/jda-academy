@@ -3,18 +3,14 @@
 <div class="container-fluid">
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <a href='/motor/create' class="btn btn-primary btn-sm">+ Add New Data</a>
+            <a href='/category/create' class="btn btn-primary btn-sm">+ Add New Data</a>
         </div>
         <div class="card-body">
             <table class="table table-bordered" id="myTable">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Name Motor</th>
-                        <th scope="col">Year Production</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Sparepart List</th>
-                        <th scope="col">Category Motor</th>
+                        <th scope="col">Name Category</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -28,7 +24,7 @@
 
 @push('script')
 <script>
-    let url = '/motor/'
+    let url = '/category/'
     let table;
     $(document).ready(function(){
         table = $('#myTable').DataTable({
@@ -49,22 +45,6 @@
                     return meta.row + 1;
                     },
                 "orderable": true,
-                },
-                {
-                    "data": "name_motor",
-                    "orderable": true,
-                },
-                {
-                    "data": "year_production",
-                    "orderable": true,
-                },
-                {
-                    "data": "name_brand",
-                    "orderable": true,
-                },
-                {
-                    "data": "name_sparepart",
-                    "orderable": true,
                 },
                 {
                     "data": "name_category_motor",
